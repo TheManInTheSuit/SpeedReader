@@ -1,0 +1,109 @@
+.player {
+	width: 600px;
+	height: 400px;
+	display: table;
+	border: 1px solid #222;
+    
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.controls {
+	width: 600px;
+	background-color: #222;
+	border: 1px solid #222;
+}
+canvas, .content, textarea {
+	height: 400px;
+	width: 600px;
+	display: block;
+	color: #ccc;
+	background-color: #000;
+}
+.content {
+	border: 1px solid black;
+}
+.header {
+	height: 30px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	border: none;
+}
+textarea.text {
+	resize: none;
+	width: 600px;
+	height: 369px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+}
+
+.reader {
+	display: none;
+}
+
+.speed-slider {
+	width: 50px;
+	display: inline-block;
+}
+
+.index-labels label {
+	font-size: 11px;
+	color: #888;
+}
+.current-index {
+	color: #fff;
+}
+
+.float-right {
+	float: right;
+}
+
+.slider, .ui-slider {
+	height: 4px;
+	border-radius: 0px;
+	background-color: #777;
+	background-image: none;
+}
+.ui-slider, .ui-widget, .ui-slider-range{
+	border: none;
+	
+}
+
+.ui-slider .ui-slider-handle {
+	border-radius: 0px;
+	height: 14px;
+	width: 4px;
+	
+	background-color: #fff;
+	background-image: none;
+	margin-left: -2px;
+	margin-top: 0px;
+}
+.ui-slider-range {
+	border-radius: 0px;
+	background-color: red;
+	background-image: none;
+}
+
+.index-slider.ui-slider .ui-slider-handle {
+	border-radius: 50%;
+	width: 14px;
+	height: 14px;
+	margin-left: -6px;
+	margin-top: -1px;
+}
+.index-slider {
+	height: 6px;
+}
+.index-slider a {
+	visibility: hidden;
+}
+.index-slider:hover a {
+	visibility: visible;
+}
+.index-labels {
+	margin-left: 8px;
+}

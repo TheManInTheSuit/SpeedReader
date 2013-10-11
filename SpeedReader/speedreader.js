@@ -25,15 +25,15 @@ var SpeedReader = function() {
 }
 
 SpeedReader.Word = function(index, data, offset) {
-	
 	this.value = data || '';
 	this.delay = offset || 0;
 	this.format = null;
 }
 
 SpeedReader.Parser = function() {
-	
+	var parser = this;
 	var onLoad = this.onLoad = function(action) {
+		console.log(onLoad, action);
 		onLoad = action;
 	}
 	var onParse = this.onParse = function(action) {
@@ -121,7 +121,8 @@ SpeedReader.Parser = function() {
 		}
 		
 		addWord();		
-		onLoad(text);
+		parser.onLoad(text);
+		console.log(words);
 	};
 }
 
